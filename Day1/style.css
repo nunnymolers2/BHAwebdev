@@ -1,0 +1,19 @@
+/* Selector {
+    element:value;
+} */
+
+h1{
+    color:red;
+}
+
+img{
+    width: 100px;
+}
+
+.silly{
+    border:1px solid black;
+}
+
+#silliest{
+    border:1px solid red;
+}
