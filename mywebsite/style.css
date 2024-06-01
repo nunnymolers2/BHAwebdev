@@ -1,0 +1,198 @@
+/* FOUNDATION */
+body {
+	/* FLEX BOX PROPERTIES */
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content:space-between;
+	
+	
+	/* BOX MODEL PROPERTIES */
+	margin: 0;
+	padding:0;
+	min-height: 100vh;
+	
+	/*Specify font family*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+body > * {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+/* NAVIGATION SECTION */
+
+nav {
+	color:black;
+	background-color: white;
+	height:80px;
+	width: 100%;
+	
+	/*Stretch the distance between elements to fill the width*/
+	max-width:600px;
+	justify-content:space-around;
+	flex-wrap:wrap;
+}
+
+nav a {
+	/*Customize <a> tag style*/
+	text-decoration: none;
+	color:black;
+	margin:0 12px;
+}
+
+nav>a:hover {
+	color: #F45B69;
+}
+
+/* HEADER SECTION */
+header {
+	color:black;
+	background-color: #fdf0e6;
+	height:400px;
+	width:100%;
+}
+
+header {
+	background-color: #FDF0E6;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+    padding-top:5rem;
+    padding-bottom: 5rem;
+}
+
+header h1 {
+	font-size: 64px;
+	margin: 0;
+}
+
+header h2 {
+	font-size: 40px;
+	margin: 0;
+	color: #F45B69;
+	/* Make all of the characters to uppercase*/
+	text-transform: uppercase;
+}
+
+header h3 {
+	font-size: 16px;
+	margin: 0;
+	color: #5E616E;
+}
+
+header img {
+	width: 320px;
+	height: 320px;
+	background-color: #fff;
+	border-radius: 100%;
+	margin-left: 40px;
+}
+
+/* ABOUT SECTION */
+#about {
+	
+	color:white;
+	background-color: black;
+	min-height:400px;
+	width:100%;
+	
+	/* Add background image */
+	background-image: url("assets/background.jpg");
+	/* background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat; */
+	
+	/* Center the content vertically and horizontally */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+    padding-top:5rem;
+    padding-bottom: 5rem;
+}
+
+#about > div {
+	max-width: 640px;
+	/* padding: top right bottom left */
+	padding: 16px 40px 16px 40px;
+
+	/*a in rgba is the alpha channel that specifies the opacity for a color*/
+	background-color: rgba(0, 0, 0, 0.7);
+
+	/* Define the text color in this div box*/
+	color: white;
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio {
+	color: black;
+	background-color: white;
+	min-height:400px;
+	padding: 20px 0;
+	width:100%;
+	flex-direction: column;
+
+    padding-top:5rem;
+    padding-bottom: 5rem;
+}
+
+#portfolio h2 {
+	color: #F45B69;
+	text-transform: uppercase;
+}
+
+#portfolio .cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 5rem;
+}
+
+#portfolio .card{
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1rem #ffa4ad;
+    width:20%;
+}
+
+#portfolio .card a{
+    display:block;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    border-top-left-radius: 1rem;
+    overflow: hidden;
+    border-top-right-radius: 1rem;
+    transition: 0.5s;
+    
+}
+
+#portfolio .card a:hover{
+    filter:brightness(90%)
+}
+
+#portfolio .card img{
+    display:block;
+    width: 100%;
+}
+
+#portfolio .card span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* FOOTER SECTION */
+
+footer {
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
